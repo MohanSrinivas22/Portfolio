@@ -1,0 +1,16 @@
+#navbarCollapse{
+  margin-left: 3rem;
+}
+
+.nav-item{
+  margin-left: 1rem;
+}
+
+h3 > a{
+  text-decoration: none;
+  color: #dee2e6;
+}
+
+.card{
+  background-size: contain;
+}
