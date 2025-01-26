@@ -12,6 +12,11 @@
   
   #Hero{
     height: 100vh;
+    background-image: url(./images/image.png);
+    background-size: cover;
+  }
+  #Hero  .row{
+    background-color: white;
   }
 
   #About {
