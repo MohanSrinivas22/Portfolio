@@ -1,0 +1,118 @@
+#navbarCollapse{
+    margin-left: 3rem;
+  }
+  
+  .nav-item{
+    margin-left: 1rem;
+  }
+
+  .nav-item a {
+    color: white;
+  }
+  
+  #Hero{
+    height: 100vh;
+  }
+
+  #About {
+    margin-top: 2rem;  
+  }
+
+  .home-hero__mouse-scroll-cont {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite ease-in-out;
+  }
+  
+  @keyframes wheel {
+    0% {
+      top: 7px;
+      opacity: 1;
+    }
+    50% {
+      top: 25px;
+      opacity: 0.5;
+    }
+    100% {
+      top: 7px;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .home-hero__mouse-scroll-cont {
+      display: block; /* Show on large screens */
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .home-hero__mouse-scroll-cont {
+      display: none; /* Hide on smaller screens */
+    }
+    .rounded-image{
+      width: 50%;
+    }
+    #Hero{
+      text-align: center;
+    }
+  }
+  
+  
+
+  h3 > a{
+    text-decoration: none;
+    color: #dee2e6;
+  }
+  
+  .card{
+    background-size: contain;
+  }
+
+  .about-me{
+    font-size: large;
+    text-align: justify;
+  }
+
+  .content-bold{
+    font-weight: 600;
+  }
+
+  .skills{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skills-skill{
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 700;
+    color: #666;
+  }
