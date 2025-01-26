@@ -12,7 +12,7 @@
   
   #Hero{
     height: 100vh;
-    background-image: url(./images/image.png);
+    background-image: url(./assets/images/image.png);
     background-size: cover;
   }
   #Hero  .row{
